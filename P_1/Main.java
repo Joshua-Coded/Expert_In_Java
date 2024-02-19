@@ -57,6 +57,7 @@ public class Main {
         System.out.println(html1);
 
         // using StringBuilder
+        
         System.out.println("\n Multiline SQL/JSON/HTML before text blocks (using StringBuilder):");
         StringBuilder sql2 = new StringBuilder();
         sql2.append("UPDATE \"public\".\"office\"\n")

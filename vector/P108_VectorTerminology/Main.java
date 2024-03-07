@@ -4,23 +4,23 @@ import java.lang.foreign.ValueL
 
 import jdk.incubator.vector.VectorSpecies;
 
+import jdk.incubator.vector.VectorSpecies;
+
 import java.nio.ByteOrder;
 import java.util.Arrays;
 
-import jdk.incubator.vector.DoubleVector;
-import jdk.incubator.vector.FloatVector;
+
+        dk.incubator.vector.FloatVector;
 import jdk.incubator.vector.IntVector;
 import jdk.incubator.vector.Vector;
-import jdk.incubator.vector.VectorMask;
-import jdk.incubator.vector.VectorOperators;
+import jdk.incubato ator.vector.VectorOperators;
 import jdk.incubator.vector.VectorShape;
 import jdk.incubator.vector.VectorShuffle;
 import jdk.incubator.vector.VectorSpecies;
 
 public class Main {
     public static void main(String[] args) {
-
-        // creating vectorSpecies
+ ing vectorSpecies
         VectorSpecies<Double> VS1 = VectorSpecies.of(double.class, VectorShape.S_512_BIT);
         VectorSpecies<Double> VS2 = VectorSpecies.of(double.class, VectorShape.S_Max_BIT);
         VectorSpecies<Double> VS3 = VectorSpecies.ofLargestShape(double.class);
@@ -37,8 +37,7 @@ public class Main {
         System.out.println("Element type (VS3)" + VS3.elementType());
         System.out.println("Element shape " + VS3.vectorShape());
         System.out.println("Element type (VS4)" + VS4.elementType());
-        System.out.println("Element shape " + VS4.vectorShape());
-        System.out.println("Element type (VS5)" + VS5.elementType());
+        System.out.p ut.println("Element type (VS5)" + VS5.elementType());
         System.out.println("Element shape" + VS5.vectorShape());
         System.out.println("Element type (VS6)" + VS6.elementType());
         System.out.println("Element shape " + VS6.vectorShape());
@@ -53,7 +52,55 @@ public class Main {
         System.out.println()
 
         // create vectors
+
         VectorSpecies<Integer> VS256 = IntegerVector.SPECIES_256;
-    }
-            
+
+        // creating vectors of zeros
+        VectorSpecies<Integer> v1 = VS256.zero();
+        System.out.println("v1: " + Arrays.toString(v1.toIntArray()));
+
+        Intvector v2 = IntVector.zero(VS256);
+        System.out.println("v2: " + Arrays.toString(v2.toIntArray()));
+        
+
           
+
+        
+
+        
+
+        
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+    
